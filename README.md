@@ -1,50 +1,96 @@
-# AutoKeyClick — Installers & Releases
+# AutoKeyClick — downloads
 
-Distribution repository for **[AutoKeyClick](https://github.com/MrParkerZ7/project-auto-key-click)** — a Windows automation tool for mouse-clicking and keyboard-input automation.
+**A Windows automation tool for mouse-clicking and keyboard-input automation.**
 
-Each release lives under `vX.Y.Z/` with packaged artifacts and a `SHA256SUMS.txt`.
+This repository is the public **download home** for the packaged installers and
+portable builds of [**AutoKeyClick**](https://github.com/MrParkerZ7/project-auto-key-click).
+It holds no source code — every release here is built and published automatically
+from the source repo when a version tag is pushed.
 
-## Latest release — v1.0.0
+> ⬇️ **[Download the latest release →](../../releases/latest)**
 
-| Artifact | File | Size | Use when… |
-|----------|------|-----:|-----------|
-| **Installer (recommended)** | [`AutoKeyClick-1.0.0-setup.exe`](v1.0.0/AutoKeyClick-1.0.0-setup.exe) | ~50 MB | You want a normal install: Start-menu shortcut, optional desktop icon, and an uninstaller. Shows the MIT license agreement during setup. |
-| **Portable (zip)** | [`AutoKeyClick-1.0.0-win-x64-portable.zip`](v1.0.0/AutoKeyClick-1.0.0-win-x64-portable.zip) | ~64 MB | You want no install — unzip and run `AutoKeyClick.exe` anywhere. |
-| **Portable (single exe)** | [`AutoKeyClick-1.0.0-win-x64.exe`](v1.0.0/AutoKeyClick-1.0.0-win-x64.exe) | ~70 MB | You want a single double-click file, no unzip. |
-| **MSIX package** | [`AutoKeyClick-1.0.0.msix`](v1.0.0/AutoKeyClick-1.0.0.msix) | ~69 MB | You prefer the modern Windows app package (requires trusting the cert — see below). |
-| **Signing certificate** | [`AutoKeyClick-1.0.0.cer`](v1.0.0/AutoKeyClick-1.0.0.cer) | — | Trust this to install the MSIX. |
+---
 
-All builds are **self-contained** (the .NET 8 runtime is bundled) and target **Windows x64** — no prerequisites required.
+## What is AutoKeyClick?
 
-## Install instructions
+AutoKeyClick automates repetitive mouse and keyboard input on Windows — auto-clicking
+at a set interval, typing text or key combinations, and recording/replaying input
+sequences — with global hotkeys to start and stop. Built with C# / WPF on .NET 8.
 
-### Installer (`-setup.exe`)
-1. Download and run `AutoKeyClick-1.0.0-setup.exe`.
-2. Read and accept the **MIT License agreement** on the license page.
-3. Choose options (optional desktop icon) and finish. Installs per-user (no admin needed).
-4. Launch from the Start menu. Uninstall via *Settings → Apps* or the Start-menu *Uninstall* entry.
+## Key features
 
-### Portable (`.zip` or `.exe`)
-- **Zip:** extract anywhere, then run `AutoKeyClick.exe`. Nothing is written to the registry; delete the folder to remove.
-- **Single exe:** just double-click `AutoKeyClick-1.0.0-win-x64.exe`.
+- **Auto clicker** — left / right / middle button, single or double click, custom
+  millisecond interval, click at the current cursor or a fixed X/Y position, fixed
+  repeat count or infinite loop.
+- **Auto keyboard** — type text strings or press keys / combinations (Ctrl+C, Alt+Tab,
+  …) on a custom interval, with repeat or infinite loop.
+- **Record & playback** — record mouse movements, clicks, and keystrokes with timing,
+  then replay them at original or custom speed; save recordings for reuse.
+- **Profiles & presets** — save the current configuration as a named profile and
+  switch between profiles; import/export to share between machines.
+- **Global hotkeys** — start/stop (default `F6`) and emergency stop (default `F8`),
+  with customizable bindings, so you can drive automation while another app is focused.
 
-### MSIX (`.msix`)
-The MSIX is signed with a **self-signed certificate**, so Windows needs to trust it first:
-1. Download both `AutoKeyClick-1.0.0.msix` and `AutoKeyClick-1.0.0.cer`.
-2. Right-click `AutoKeyClick-1.0.0.cer` → **Install Certificate** → *Local Machine* → place in **Trusted People** (or *Trusted Root Certification Authorities*). Admin rights required for this step.
-3. Double-click `AutoKeyClick-1.0.0.msix` → **Install** via the App Installer.
+A fuller breakdown — default hotkeys, system requirements, and the platform matrix —
+lives in **[SPEC.md](SPEC.md)**.
 
-> A self-signed certificate is used because this is an independent, open-source release. If you prefer not to trust a self-signed cert, use the installer or portable build instead.
+---
+
+## Download & install
+
+Grab the asset you want from the **[latest release](../../releases/latest)**. Every
+release ships these Windows x64 builds:
+
+| Build | File | Use when… |
+|-------|------|-----------|
+| **Installer** | `AutoKeyClick-<version>-setup.exe` | You want a normal install: Start-menu shortcut, optional desktop icon, uninstaller. Shows the MIT license agreement during setup. |
+| **Portable (zip)** | `AutoKeyClick-<version>-win-x64-portable.zip` | No install — unzip and run `AutoKeyClick.exe`. |
+| **Portable (exe)** | `AutoKeyClick-<version>-win-x64.exe` | A single double-click file, no unzip. |
+
+Plus `SHA256SUMS.txt` for verification. All builds are **self-contained** — the .NET 8
+runtime is bundled, so no separate runtime install is required.
+
+### Per-build steps
+
+- **Installer** — run `AutoKeyClick-<version>-setup.exe`, accept the MIT license, finish.
+  Installs per-user (no admin). Launch from the Start menu; uninstall via *Settings → Apps*.
+- **Portable zip** — unzip anywhere and run `AutoKeyClick.exe`. Delete the folder to remove.
+- **Portable exe** — just double-click it.
+
+### ⚠️ A note on code signing
+
+These builds are **not code-signed**, so Windows SmartScreen may warn that the app is
+from an unidentified developer:
+
+- **Windows** — SmartScreen shows "Windows protected your PC" → **More info → Run anyway**.
+
+Code signing is on the roadmap.
 
 ## Verify your download
 
 ```powershell
 Get-FileHash .\AutoKeyClick-1.0.0-setup.exe -Algorithm SHA256
 ```
-Compare the output against `v1.0.0/SHA256SUMS.txt`.
+Compare the output against `SHA256SUMS.txt` from the same release.
 
-## License & policy
+---
 
-AutoKeyClick is released under the **[MIT License](LICENSE)** — free to use, modify, and distribute, **with no warranty**. The installer presents this license for acceptance before installing.
+## Releases & versioning
 
-**Acceptable-use note:** AutoKeyClick automates mouse and keyboard input. You are responsible for using it lawfully and in accordance with the terms of any software, game, or service you use it with. The authors accept no liability for misuse (see the MIT "AS IS" / no-liability clause).
+AutoKeyClick follows [Semantic Versioning](https://semver.org/). Each GitHub Release on
+this repo carries its own auto-generated notes and the full asset set.
+
+## How a release is cut (maintainers)
+
+The source lives in **[`project-auto-key-click`](https://github.com/MrParkerZ7/project-auto-key-click)**.
+Pushing a `vX.Y.Z` tag there runs its `Release` GitHub Actions workflow, which builds the
+app on a Windows runner (portable exe + zip + Inno Setup installer) and publishes a
+GitHub Release **here** with those assets.
+
+**One-time setup:** the source repo needs a `RELEASE_PAT` secret — a token with
+**Contents: read & write** on this repo — so its workflow can publish here (a repo's
+`GITHUB_TOKEN` is scoped to its own repo only).
+
+## License
+
+MIT — see [`LICENSE`](LICENSE). Same license as the source project.
