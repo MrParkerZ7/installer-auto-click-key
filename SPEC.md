@@ -84,7 +84,8 @@ automation without switching back to AutoKeyClick.
 
 - **Source & engineering docs** — <https://github.com/MrParkerZ7/project-auto-key-click>
 - **Downloads / releases** — [latest release](../../releases/latest)
-- **License** — MIT ([LICENSE](LICENSE))
+- **Data-flow diagram** — [docs/data-workflow-diagram.drawio](docs/data-workflow-diagram.drawio) (open with draw.io / diagrams.net)
+- **Legal** — [LICENSE](LICENSE) (MIT) · [EULA](EULA.md) · [THIRD-PARTY-LICENSES](THIRD-PARTY-LICENSES.md)
 
 ## Disclaimer
 

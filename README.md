@@ -2,6 +2,8 @@
 
 **A Windows automation tool for mouse-clicking and keyboard-input automation.**
 
+![AutoKeyClick screenshot](docs/screenshot.png)
+
 This repository is the public **download home** for the packaged installers and
 portable builds of [**AutoKeyClick**](https://github.com/MrParkerZ7/project-auto-key-click).
 It holds no source code — every release here is built and published automatically
