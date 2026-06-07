@@ -36,6 +36,14 @@ sequences — with global hotkeys to start and stop. Built with C# / WPF on .NET
 A fuller breakdown — default hotkeys, system requirements, and the platform matrix —
 lives in **[SPEC.md](SPEC.md)**.
 
+## How it works
+
+![AutoKeyClick functional & data-flow diagram](docs/data-workflow-diagram.png)
+
+A layered WPF / .NET app — UI (XAML) → ViewModels (MVVM state) → services
+(clicker · keyboard · recorder · hotkeys · profiles) → the Win32 input layer, plus the
+runtime execution flow. Full breakdown in **[SPEC.md](SPEC.md#architecture--data-flow)**.
+
 ---
 
 ## Download & install
