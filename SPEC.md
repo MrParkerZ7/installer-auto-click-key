@@ -80,11 +80,20 @@ automation without switching back to AutoKeyClick.
 - **Dark/light theme** and **system-tray integration** are planned.
 - Windows-only — there is no macOS or Linux build (the app uses the Win32 input APIs).
 
+## Architecture & data flow
+
+![AutoKeyClick functional & data-flow diagram](docs/data-workflow-diagram.png)
+
+How the layers fit together — UI (WPF / XAML) → ViewModels (MVVM state) → models →
+services (clicker · keyboard · recorder · hotkeys · profiles) → the Win32 input layer,
+plus the runtime execution flow. Editable source:
+[`docs/data-workflow-diagram.drawio`](docs/data-workflow-diagram.drawio) (open with draw.io / diagrams.net).
+
 ## 9. Links
 
 - **Source & engineering docs** — <https://github.com/MrParkerZ7/project-auto-key-click>
 - **Downloads / releases** — [latest release](../../releases/latest)
-- **Data-flow diagram** — [docs/data-workflow-diagram.drawio](docs/data-workflow-diagram.drawio) (open with draw.io / diagrams.net)
+- **Architecture diagram** — see [Architecture & data flow](#architecture--data-flow) above
 - **Legal** — [LICENSE](LICENSE) (MIT) · [EULA](EULA.md) · [THIRD-PARTY-LICENSES](THIRD-PARTY-LICENSES.md)
 
 ## Disclaimer

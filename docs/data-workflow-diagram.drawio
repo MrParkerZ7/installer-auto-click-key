@@ -1,112 +1,81 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="65bd71144e">
     <diagram name="AutoKeyClick-Data-Workflow" id="autoclickkey-workflow-1">
-        <mxGraphModel dx="2200" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1800" math="0" shadow="0">
+        <mxGraphModel dx="1772" dy="2278" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1800" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-
-                <!-- Title -->
                 <mxCell id="title" value="AutoKeyClick - Functional &amp; Data Workflow Diagram" style="text;html=1;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;shadow=1;textShadow=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="20" width="600" height="40" as="geometry"/>
                 </mxCell>
-
-                <!-- ==================== USER INPUT LAYER ==================== -->
                 <mxCell id="layer-ui" value="UI Layer (WPF XAML)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=4;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=14;shadow=1;textShadow=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="80" width="2320" height="180" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="user" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="30" y="50" width="40" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="mainwindow" value="MainWindow.xaml" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=11;fontStyle=1;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="120" y="55" width="120" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="profile-tab" value="Profile Tab&#xa;(Actions List)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="280" y="40" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="workspace-tab" value="Workspace Tab&#xa;(Jobs List)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="280" y="100" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="action-editor" value="Action Editor&#xa;(Click/Key/Delay)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="420" y="40" width="110" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="job-editor" value="Job Editor&#xa;(Profile Selection)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="420" y="100" width="110" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="settings-panel" value="Settings Panel&#xa;(Loop, Delay)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="570" y="40" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="hotkey-panel" value="Hotkey Settings&#xa;(F6, F8)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="570" y="100" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="position-picker" value="Position Picker&#xa;(X, Y coords)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="710" y="40" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="control-buttons" value="Control Buttons&#xa;Run/Stop/Pause" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="710" y="100" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="record-button" value="Record&#xa;Button" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="850" y="70" width="80" height="50" as="geometry"/>
                 </mxCell>
-
-                <!-- User Input Events Labels -->
                 <mxCell id="input-events" value="User Input Events:&#xa;• Create/Edit Actions&#xa;• Create/Edit Jobs&#xa;• Configure Settings&#xa;• Run/Stop/Pause&#xa;• Record Actions" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#333333;spacing=4;shadow=1;textShadow=1;" parent="layer-ui" vertex="1">
                     <mxGeometry x="970" y="35" width="140" height="100" as="geometry"/>
                 </mxCell>
-
-                <!-- ==================== VIEWMODEL LAYER ==================== -->
                 <mxCell id="layer-vm" value="ViewModel Layer (MVVM State Management)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=4;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=14;shadow=1;textShadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="280" width="2320" height="200" as="geometry"/>
+                    <mxGeometry x="40" y="280" width="2320" height="240" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="mainvm" value="MainViewModel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;fontSize=12;fontStyle=1;shadow=1;textShadow=1;" parent="layer-vm" vertex="1">
-                    <mxGeometry x="30" y="50" width="140" height="40" as="geometry"/>
+                    <mxGeometry x="30" y="60" width="140" height="48" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="mainvm-state" value="State Properties:&#xa;• CurrentProfileName&#xa;• Actions (ObservableCollection)&#xa;• SelectedAction&#xa;• IsRunning / IsPaused&#xa;• CurrentActionIndex&#xa;• CurrentLoopCount&#xa;• Position Picker State" style="text;html=1;strokeColor=#6c8ebf;fillColor=#e6f2ff;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#333333;spacing=4;shadow=1;textShadow=1;" parent="layer-vm" vertex="1">
-                    <mxGeometry x="30" y="100" width="140" height="90" as="geometry"/>
+                    <mxGeometry x="30" y="120" width="140" height="108" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="workspacevm" value="WorkspaceViewModel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;fontSize=12;fontStyle=1;shadow=1;textShadow=1;" parent="layer-vm" vertex="1">
-                    <mxGeometry x="200" y="50" width="150" height="40" as="geometry"/>
+                    <mxGeometry x="200" y="60" width="150" height="48" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="workspacevm-state" value="State Properties:&#xa;• CurrentWorkspaceName&#xa;• Jobs (ObservableCollection)&#xa;• SelectedJob&#xa;• AvailableProfiles&#xa;• IsRunning / IsPaused&#xa;• StatusText" style="text;html=1;strokeColor=#6c8ebf;fillColor=#e6f2ff;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#333333;spacing=4;shadow=1;textShadow=1;" parent="layer-vm" vertex="1">
-                    <mxGeometry x="200" y="100" width="150" height="90" as="geometry"/>
+                    <mxGeometry x="200" y="120" width="150" height="108" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="autosave" value="Auto-Save&#xa;Debounce Timer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=10;fontStyle=1;shadow=1;textShadow=1;" parent="layer-vm" vertex="1">
-                    <mxGeometry x="390" y="60" width="100" height="50" as="geometry"/>
+                    <mxGeometry x="390" y="72" width="100" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="commands" value="RelayCommands:&#xa;• ToggleCommand&#xa;• PauseCommand&#xa;• StopCommand&#xa;• AddActionCommand&#xa;• DeleteActionCommand&#xa;• SaveCommand&#xa;• LoadCommand" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#333333;spacing=4;shadow=1;textShadow=1;" parent="layer-vm" vertex="1">
-                    <mxGeometry x="390" y="115" width="120" height="80" as="geometry"/>
+                    <mxGeometry x="390" y="138" width="120" height="96" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="property-changed" value="INotifyPropertyChanged&#xa;↓&#xa;UI Binding Updates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-vm" vertex="1">
-                    <mxGeometry x="550" y="60" width="130" height="60" as="geometry"/>
+                    <mxGeometry x="550" y="72" width="130" height="72" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="collection-changed" value="ObservableCollection&#xa;↓&#xa;CollectionChanged Events" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-vm" vertex="1">
-                    <mxGeometry x="550" y="130" width="130" height="60" as="geometry"/>
+                    <mxGeometry x="550" y="156" width="130" height="72" as="geometry"/>
                 </mxCell>
-
-                <!-- ==================== MODEL LAYER ==================== -->
                 <mxCell id="layer-model" value="Model Layer (Data Classes)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=4;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=14;shadow=1;textShadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="500" width="1100" height="280" as="geometry"/>
+                    <mxGeometry x="40" y="540" width="1100" height="280" as="geometry"/>
                 </mxCell>
-
-                <!-- ActionItem Model -->
                 <mxCell id="model-action" value="ActionItem" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#82b366;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;fontSize=11;fontColor=#FFFFFF;" parent="layer-model" vertex="1">
                     <mxGeometry x="30" y="50" width="180" height="200" as="geometry"/>
                 </mxCell>
@@ -137,8 +106,6 @@
                 <mxCell id="action-remark" value="Remark: string" style="text;strokeColor=#82b366;fillColor=#e8f5e9;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;html=1;fontSize=9;shadow=1;textShadow=1;" parent="model-action" vertex="1">
                     <mxGeometry y="180" width="180" height="20" as="geometry"/>
                 </mxCell>
-
-                <!-- Profile Model -->
                 <mxCell id="model-profile" value="Profile" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#6c8ebf;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;fontSize=11;fontColor=#FFFFFF;" parent="layer-model" vertex="1">
                     <mxGeometry x="240" y="50" width="180" height="200" as="geometry"/>
                 </mxCell>
@@ -169,8 +136,6 @@
                 <mxCell id="profile-recorded" value="RecordedActions: List" style="text;strokeColor=#6c8ebf;fillColor=#e6f2ff;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;html=1;fontSize=9;shadow=1;textShadow=1;" parent="model-profile" vertex="1">
                     <mxGeometry y="186" width="180" height="14" as="geometry"/>
                 </mxCell>
-
-                <!-- Job Model -->
                 <mxCell id="model-job" value="Job" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#d6b656;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;fontSize=11;fontColor=#333333;" parent="layer-model" vertex="1">
                     <mxGeometry x="450" y="50" width="180" height="200" as="geometry"/>
                 </mxCell>
@@ -201,8 +166,6 @@
                 <mxCell id="job-override4" value="OverrideRestorePos: bool?" style="text;strokeColor=#d6b656;fillColor=#fffbf0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;html=1;fontSize=9;shadow=1;textShadow=1;" parent="model-job" vertex="1">
                     <mxGeometry y="186" width="180" height="14" as="geometry"/>
                 </mxCell>
-
-                <!-- Workspace Model -->
                 <mxCell id="model-workspace" value="Workspace" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#9673a6;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;fontSize=11;fontColor=#FFFFFF;" parent="layer-model" vertex="1">
                     <mxGeometry x="660" y="50" width="180" height="140" as="geometry"/>
                 </mxCell>
@@ -224,8 +187,6 @@
                 <mxCell id="workspace-dates" value="CreatedAt, ModifiedAt" style="text;strokeColor=#9673a6;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;html=1;fontSize=9;shadow=1;textShadow=1;" parent="model-workspace" vertex="1">
                     <mxGeometry y="126" width="180" height="14" as="geometry"/>
                 </mxCell>
-
-                <!-- AppSettings Model -->
                 <mxCell id="model-settings" value="AppSettings" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;swimlaneFillColor=#b85450;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;fontSize=11;fontColor=#FFFFFF;" parent="layer-model" vertex="1">
                     <mxGeometry x="870" y="50" width="180" height="90" as="geometry"/>
                 </mxCell>
@@ -238,220 +199,162 @@
                 <mxCell id="settings-hotkey" value="LastHotkey: string" style="text;strokeColor=#b85450;fillColor=#fce8e6;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;html=1;fontSize=9;shadow=1;textShadow=1;" parent="model-settings" vertex="1">
                     <mxGeometry y="66" width="180" height="24" as="geometry"/>
                 </mxCell>
-
-                <!-- Model Relationships -->
-                <mxCell id="rel-profile-action" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;shadow=1;textShadow=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontSize=9;labelBackgroundColor=#ffffff;" parent="layer-model" source="profile-actions" target="action-type" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="rel-profile-action" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;shadow=1;textShadow=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=9;labelBackgroundColor=#ffffff;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" parent="layer-model" source="profile-actions" target="action-id" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="220" y="106"/>
+                            <mxPoint x="220" y="86"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-
                 <mxCell id="rel-workspace-job" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;shadow=1;textShadow=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=9;labelBackgroundColor=#ffffff;" parent="layer-model" source="workspace-jobs" target="job-name" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="rel-job-profile" value="N:M (by name)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6b656;strokeWidth=2;startArrow=ERmany;startFill=0;endArrow=ERmany;endFill=0;shadow=1;textShadow=1;dashed=1;dashPattern=8 8;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontSize=9;labelBackgroundColor=#ffffff;" parent="layer-model" source="job-profiles" target="profile-name" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-
-                <!-- ==================== SERVICE LAYER ==================== -->
                 <mxCell id="layer-service" value="Service Layer (Business Logic)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=4;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=14;shadow=1;textShadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1160" y="500" width="1200" height="280" as="geometry"/>
+                    <mxGeometry x="1160" y="540" width="1200" height="280" as="geometry"/>
                 </mxCell>
-
-                <!-- Persistence Services -->
                 <mxCell id="persistence-group" value="Persistence Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6f2ff;strokeColor=#6c8ebf;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=5;fontSize=11;fontStyle=2;shadow=1;textShadow=1;" parent="layer-service" vertex="1">
                     <mxGeometry x="30" y="50" width="350" height="110" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="profile-service" value="ProfileService&#xa;Save/Load/Delete&#xa;Export/Import" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="persistence-group" vertex="1">
                     <mxGeometry x="20" y="30" width="90" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="workspace-service" value="WorkspaceService&#xa;Save/Load/Delete&#xa;GetAll" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="persistence-group" vertex="1">
                     <mxGeometry x="130" y="30" width="90" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="settings-service" value="SettingsService&#xa;Save/Load&#xa;App Preferences" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="persistence-group" vertex="1">
                     <mxGeometry x="240" y="30" width="90" height="60" as="geometry"/>
                 </mxCell>
-
-                <!-- Execution Services -->
                 <mxCell id="execution-group" value="Execution Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#b85450;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=5;fontSize=11;fontStyle=2;shadow=1;textShadow=1;" parent="layer-service" vertex="1">
                     <mxGeometry x="400" y="50" width="260" height="110" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="action-runner" value="ActionRunnerService&#xa;Execute Actions&#xa;Loop/Pause/Resume" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="execution-group" vertex="1">
                     <mxGeometry x="20" y="30" width="100" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="workspace-runner" value="WorkspaceRunner&#xa;Orchestrate Jobs&#xa;Load Profiles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="execution-group" vertex="1">
                     <mxGeometry x="140" y="30" width="100" height="60" as="geometry"/>
                 </mxCell>
-
-                <!-- Utility Services -->
                 <mxCell id="utility-group" value="Utility Services" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#82b366;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=5;fontSize=11;fontStyle=2;shadow=1;textShadow=1;" parent="layer-service" vertex="1">
                     <mxGeometry x="680" y="50" width="350" height="110" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="hotkey-service" value="HotkeyService&#xa;Register/Unregister&#xa;Global Hotkeys" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="utility-group" vertex="1">
                     <mxGeometry x="20" y="30" width="90" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="recorder-service" value="RecorderService&#xa;Start/Stop Record&#xa;Playback" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="utility-group" vertex="1">
                     <mxGeometry x="130" y="30" width="90" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="position-service" value="PositionPicker&#xa;Get Mouse&#xa;Coordinates" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="utility-group" vertex="1">
                     <mxGeometry x="240" y="30" width="90" height="60" as="geometry"/>
                 </mxCell>
-
-                <!-- Service Events -->
                 <mxCell id="events-box" value="Service Events:&#xa;• ActionExecuted(index)&#xa;• Stopped(reason)&#xa;• Paused / Resumed&#xa;• ProgressChanged(job, profile)&#xa;• RecordingComplete" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#333333;spacing=4;shadow=1;textShadow=1;" parent="layer-service" vertex="1">
                     <mxGeometry x="30" y="175" width="180" height="90" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="threading-box" value="Threading:&#xa;• async/await Tasks&#xa;• ManualResetEventSlim&#xa;• CancellationToken&#xa;• Dispatcher for UI updates" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#333333;spacing=4;shadow=1;textShadow=1;" parent="layer-service" vertex="1">
                     <mxGeometry x="230" y="175" width="160" height="90" as="geometry"/>
                 </mxCell>
-
-                <!-- ==================== PERSISTENCE LAYER ==================== -->
                 <mxCell id="layer-persistence" value="Persistence Layer (File System)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=4;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=14;shadow=1;textShadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="800" width="700" height="180" as="geometry"/>
+                    <mxGeometry x="40" y="860" width="700" height="180" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="appdata" value="%APPDATA%\AutoKeyClick\" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=11;fontStyle=1;shadow=1;textShadow=1;" parent="layer-persistence" vertex="1">
                     <mxGeometry x="30" y="50" width="200" height="30" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="profiles-folder" value="Profiles/&#xa;*.json" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-persistence" vertex="1">
                     <mxGeometry x="30" y="100" width="80" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="workspaces-folder" value="Workspaces/&#xa;*.json" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-persistence" vertex="1">
                     <mxGeometry x="130" y="100" width="80" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="settings-file" value="settings.json" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-persistence" vertex="1">
                     <mxGeometry x="230" y="100" width="80" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="json-format" value="JSON Format:&#xa;• Indented for readability&#xa;• IFileSystem abstraction&#xa;• No encryption" style="text;html=1;strokeColor=#9673a6;fillColor=#f3e8f8;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=9;fontColor=#333333;spacing=4;shadow=1;textShadow=1;" parent="layer-persistence" vertex="1">
                     <mxGeometry x="340" y="100" width="140" height="60" as="geometry"/>
                 </mxCell>
-
-                <!-- ==================== WIN32 API LAYER ==================== -->
                 <mxCell id="layer-win32" value="Win32 API Layer (P/Invoke)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=4;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=14;shadow=1;textShadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="760" y="800" width="700" height="180" as="geometry"/>
+                    <mxGeometry x="760" y="860" width="700" height="180" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="win32api" value="Win32Api.cs (user32.dll)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=11;fontStyle=1;shadow=1;textShadow=1;" parent="layer-win32" vertex="1">
                     <mxGeometry x="30" y="50" width="180" height="30" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="sendinput" value="SendInput()&#xa;Mouse/Keyboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-win32" vertex="1">
                     <mxGeometry x="30" y="100" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="registerhotkey" value="RegisterHotKey()&#xa;Global Shortcuts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-win32" vertex="1">
                     <mxGeometry x="150" y="100" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="getcursorpos" value="GetCursorPos()&#xa;SetCursorPos()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-win32" vertex="1">
                     <mxGeometry x="270" y="100" width="100" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="hooks" value="SetWindowsHookEx()&#xa;Recording Hooks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=10;shadow=1;textShadow=1;" parent="layer-win32" vertex="1">
                     <mxGeometry x="390" y="100" width="110" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="os-output" value="Windows OS&#xa;(Mouse/Keyboard Events)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=#ffffff;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#ffffff;shadow=1;textShadow=1;" parent="layer-win32" vertex="1">
                     <mxGeometry x="530" y="90" width="140" height="60" as="geometry"/>
                 </mxCell>
-
-                <!-- ==================== DATA FLOW ARROWS ==================== -->
-
-                <!-- UI to ViewModel -->
                 <mxCell id="flow-ui-vm" value="Data Binding" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#232F3E;strokeWidth=2;startArrow=classic;startFill=1;endArrow=classic;endFill=1;shadow=1;textShadow=1;fontSize=9;labelBackgroundColor=#ffffff;" parent="1" source="layer-ui" target="layer-vm" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-
-                <!-- ViewModel to Model (within same area, use label) -->
-                <mxCell id="flow-vm-model" value="State&#xa;Updates" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#232F3E;strokeWidth=2;endArrow=classic;endFill=1;flowAnimation=1;shadow=1;textShadow=1;fontSize=9;labelBackgroundColor=#ffffff;" parent="1" edge="1">
+                <mxCell id="flow-vm-model" value="State&#xa;Updates" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#232F3E;strokeWidth=2;endArrow=classic;endFill=1;flowAnimation=1;shadow=1;textShadow=1;fontSize=9;labelBackgroundColor=#ffffff;" parent="1" edge="1" source="mainvm-state">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="200" y="480" as="sourcePoint"/>
                         <mxPoint x="200" y="540" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-
-                <!-- Model to Persistence -->
                 <mxCell id="flow-model-persist" value="JSON&#xa;Serialization" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7AA116;strokeWidth=2;startArrow=classic;startFill=1;endArrow=classic;endFill=1;shadow=1;textShadow=1;fontSize=9;labelBackgroundColor=#ffffff;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="400" y="780" as="sourcePoint"/>
-                        <mxPoint x="400" y="840" as="targetPoint"/>
+                        <mxPoint x="400" y="820" as="sourcePoint"/>
+                        <mxPoint x="400" y="880" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-
-                <!-- Service to Win32 -->
-                <mxCell id="flow-service-win32" value="Execute&#xa;Actions" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DD344C;strokeWidth=2;endArrow=classic;endFill=1;flowAnimation=1;shadow=1;textShadow=1;fontSize=9;labelBackgroundColor=#ffffff;" parent="1" edge="1">
+                <mxCell id="flow-service-win32" value="Execute&#xa;Actions" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#DD344C;strokeWidth=2;endArrow=classic;endFill=1;flowAnimation=1;shadow=1;textShadow=1;fontSize=9;labelBackgroundColor=#ffffff;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1" target="layer-win32">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1500" y="780" as="sourcePoint"/>
-                        <mxPoint x="1200" y="840" as="targetPoint"/>
+                        <mxPoint x="1500" y="820" as="sourcePoint"/>
+                        <mxPoint x="1200" y="880" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1500" y="810"/>
-                            <mxPoint x="1200" y="810"/>
+                            <mxPoint x="1500" y="840"/>
+                            <mxPoint x="1110" y="840"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-
-                <!-- ==================== EXECUTION FLOW DETAIL ==================== -->
                 <mxCell id="layer-flow" value="Execution Flow (Runtime)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=4;verticalAlign=top;align=left;spacingLeft=15;spacingTop=8;fontStyle=1;fontSize=14;shadow=1;textShadow=1;" parent="1" vertex="1">
-                    <mxGeometry x="1480" y="800" width="880" height="180" as="geometry"/>
+                    <mxGeometry x="1480" y="860" width="880" height="180" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-start" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=10;fontStyle=1;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="30" y="60" width="50" height="30" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-load" value="Load&#xa;Profile/Workspace" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="100" y="50" width="80" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-loop" value="Loop&#xa;Actions?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="200" y="45" width="70" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-execute" value="Execute&#xa;ActionItem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="290" y="50" width="80" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-click" value="Click" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="390" y="30" width="50" height="25" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-keypress" value="KeyPress" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="390" y="63" width="50" height="25" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-delay" value="Delay" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="390" y="95" width="50" height="25" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-win32" value="Win32&#xa;SendInput" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=#ffffff;strokeWidth=2;fontSize=9;fontColor=#ffffff;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="460" y="50" width="70" height="50" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-more" value="More&#xa;Actions?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="550" y="45" width="70" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-pause" value="Pause?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=9;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="640" y="45" width="60" height="60" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="flow-end" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=10;fontStyle=1;shadow=1;textShadow=1;" parent="layer-flow" vertex="1">
                     <mxGeometry x="720" y="60" width="50" height="30" as="geometry"/>
                 </mxCell>
-
-                <!-- Flow arrows -->
                 <mxCell id="f1" style="edgeStyle=none;rounded=0;html=1;strokeColor=#232F3E;strokeWidth=1;endArrow=classic;endFill=1;shadow=1;" parent="layer-flow" source="flow-start" target="flow-load" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
@@ -492,48 +395,39 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-
-                <!-- ==================== LEGEND ==================== -->
                 <mxCell id="legend" value="Legend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=5;fontStyle=1;fontSize=12;shadow=1;textShadow=1;" parent="1" vertex="1">
                     <mxGeometry x="1880" y="80" width="480" height="180" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="leg-ui" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="20" y="35" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="leg-ui-label" value="UI Components / Profile" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="60" y="35" width="130" height="20" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="leg-model" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="20" y="60" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="leg-model-label" value="Data Models / Actions" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="60" y="60" width="130" height="20" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="leg-config" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="20" y="85" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="leg-config-label" value="Configuration / Jobs" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="60" y="85" width="130" height="20" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="leg-workspace" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="20" y="110" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="leg-workspace-label" value="Workspace / Persistence" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="60" y="110" width="140" height="20" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="leg-exec" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="20" y="135" width="30" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="leg-exec-label" value="Execution / Win32 API" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="60" y="135" width="130" height="20" as="geometry"/>
                 </mxCell>
-
-                <!-- Arrow legend -->
                 <mxCell id="leg-arrow1" value="" style="edgeStyle=none;rounded=0;html=1;strokeColor=#232F3E;strokeWidth=2;startArrow=classic;startFill=1;endArrow=classic;endFill=1;shadow=1;" parent="legend" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="230" y="45" as="sourcePoint"/>
@@ -543,7 +437,6 @@
                 <mxCell id="leg-arrow1-label" value="Bidirectional Data Flow" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="290" y="35" width="130" height="20" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="leg-arrow2" value="" style="edgeStyle=none;rounded=0;html=1;strokeColor=#7AA116;strokeWidth=2;endArrow=classic;endFill=1;flowAnimation=1;shadow=1;" parent="legend" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="230" y="70" as="sourcePoint"/>
@@ -553,7 +446,6 @@
                 <mxCell id="leg-arrow2-label" value="Storage (JSON)" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="290" y="60" width="100" height="20" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="leg-arrow3" value="" style="edgeStyle=none;rounded=0;html=1;strokeColor=#DD344C;strokeWidth=2;endArrow=classic;endFill=1;flowAnimation=1;shadow=1;" parent="legend" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="230" y="95" as="sourcePoint"/>
@@ -563,7 +455,6 @@
                 <mxCell id="leg-arrow3-label" value="Execution Flow" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="290" y="85" width="100" height="20" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="leg-rel" value="" style="edgeStyle=none;rounded=0;html=1;strokeColor=#82b366;strokeWidth=2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;shadow=1;" parent="legend" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="230" y="120" as="sourcePoint"/>
@@ -573,11 +464,9 @@
                 <mxCell id="leg-rel-label" value="1:N Relationship" style="text;html=1;fontSize=10;shadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="290" y="110" width="100" height="20" as="geometry"/>
                 </mxCell>
-
                 <mxCell id="tech-stack" value="Tech Stack: C# .NET 8.0 | WPF | MVVM | user32.dll" style="text;html=1;fontSize=11;fontStyle=2;align=center;shadow=1;textShadow=1;" parent="legend" vertex="1">
                     <mxGeometry x="20" y="155" width="440" height="20" as="geometry"/>
                 </mxCell>
-
             </root>
         </mxGraphModel>
     </diagram>
