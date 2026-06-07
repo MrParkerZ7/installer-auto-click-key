@@ -91,6 +91,17 @@ GitHub Release **here** with those assets.
 **Contents: read & write** on this repo — so its workflow can publish here (a repo's
 `GITHUB_TOKEN` is scoped to its own repo only).
 
-## License
+## License & policies
 
-MIT — see [`LICENSE`](LICENSE). Same license as the source project.
+| Document | What it covers |
+|----------|----------------|
+| **[LICENSE](LICENSE)** | MIT — same license as the source project. |
+| **[EULA](EULA.md)** | End-user license agreement (also shown on the installer's agreement page). |
+| **[THIRD-PARTY-LICENSES](THIRD-PARTY-LICENSES.md)** | Attribution for the bundled .NET runtime and components. |
+
+**Acceptable use** — AutoKeyClick automates mouse and keyboard input; use it lawfully and in
+accordance with the terms of any software, game, or service you use it with. The software is
+provided **"AS IS", with no warranty** (MIT).
+
+**Security** — found a vulnerability? Please report it privately via the source repository's
+private vulnerability reporting rather than a public issue.
