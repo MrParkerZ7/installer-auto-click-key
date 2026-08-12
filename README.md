@@ -26,12 +26,12 @@ sequences — with global hotkeys to start and stop. Built with C# / WPF on .NET
   repeat count or infinite loop.
 - **Auto keyboard** — type text strings or press keys / combinations (Ctrl+C, Alt+Tab,
   …) on a custom interval, with repeat or infinite loop.
-- **Record & playback** — record mouse movements, clicks, and keystrokes with timing,
-  then replay them at original or custom speed; save recordings for reuse.
+- **Record & playback** — record mouse movements and clicks with timing, then replay
+  them at original or custom speed; save recordings for reuse.
 - **Profiles & presets** — save the current configuration as a named profile and
   switch between profiles; import/export to share between machines.
-- **Global hotkeys** — start/stop (default `F6`) and emergency stop (default `F8`),
-  with customizable bindings, so you can drive automation while another app is focused.
+- **Global hotkeys** — a single customizable start/stop toggle (default `F4`; double-press
+  to stop), so you can drive automation while another app is focused.
 
 A fuller breakdown — default hotkeys, system requirements, and the platform matrix —
 lives in **[SPEC.md](SPEC.md)**.
@@ -79,7 +79,7 @@ Code signing is on the roadmap.
 ## Verify your download
 
 ```powershell
-Get-FileHash .\AutoKeyClick-1.0.0-setup.exe -Algorithm SHA256
+Get-FileHash .\AutoKeyClick-1.1.0-setup.exe -Algorithm SHA256
 ```
 Compare the output against `SHA256SUMS.txt` from the same release.
 

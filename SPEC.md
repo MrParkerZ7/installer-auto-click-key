@@ -4,7 +4,7 @@ A reference for what **AutoKeyClick** does and how to use it. For download and i
 steps, see the [README](README.md). For engineering-level design (architecture, code,
 tests), see the [source repository](https://github.com/MrParkerZ7/project-auto-key-click).
 
-> Applies to **v1.0.0**.
+> Applies to **v1.1.0**.
 
 ---
 
@@ -36,8 +36,7 @@ start and stop automation while another application is focused.
 
 ## 4. Record & playback
 
-- **Record** mouse movements, clicks, and positions, plus keyboard inputs and their
-  timing.
+- **Record** mouse movements, clicks, and positions with their timing (mouse input only).
 - **Playback** replays the recorded actions at their original timing or a custom speed.
 - **Save / export** recordings for later reuse.
 
@@ -53,8 +52,8 @@ Default bindings (all customizable):
 
 | Action | Hotkey |
 |--------|--------|
-| Start / Stop | `F6` |
-| Emergency Stop | `F8` |
+| Start / stop / pause | `F4` (customizable) |
+| Stop (emergency) | double-press the toggle key |
 | Record | `Ctrl+R` |
 | Play Recording | `Ctrl+P` |
 
